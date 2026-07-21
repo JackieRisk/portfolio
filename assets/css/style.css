@@ -1,0 +1,732 @@
+/* ---------- Fonts ----------
+   Playfair Display: bold serif for headlines only.
+   Body text stays system sans-serif for readability. */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap');
+
+/* ---------- Base / reset ---------- */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-bg: #fafaf8;
+  --color-text: #1c1c1a;
+  /* AAA-safe muted grey: 8.5:1 against --color-bg */
+  --color-muted: #4d4d48;
+  /* AAA-safe purple (derived from the requested #8963c6, darkened to clear 7:1
+     for text and for white text on filled buttons). */
+  --color-accent: #6b3fa0;
+  /* Original brand purple, kept for decorative-only use (never carries text). */
+  --color-accent-light: #8963c6;
+  --color-accent-wash: #f3effa;
+  --color-border: #e3e2dd;
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
+  --max-width: 960px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.6;
+  font-size: 17px;
+}
+
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+a {
+  color: inherit;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 12px 28px;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  font-family: var(--font-body);
+}
+
+.btn-primary {
+  background: var(--color-accent);
+  color: #fff;
+  border-color: var(--color-accent);
+}
+
+.btn-primary:hover {
+  background: #5a3486;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-text);
+  border-color: var(--color-text);
+}
+
+.btn-secondary:hover {
+  background: var(--color-text);
+  color: #fff;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  border-bottom: 1px solid var(--color-border);
+  padding: 20px 0;
+}
+
+.site-header .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav a {
+  margin-left: 24px;
+  text-decoration: none;
+  color: var(--color-muted);
+  font-size: 0.95rem;
+}
+
+.site-nav a:first-child {
+  margin-left: 0;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  color: var(--color-accent);
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  margin: -8px;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--color-text);
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  padding: 64px 24px 56px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1 1 380px;
+}
+
+.eyebrow {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin-bottom: 14px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin: 0 0 16px;
+}
+
+.hero-summary {
+  color: var(--color-muted);
+  font-size: 1.1rem;
+  margin: 0 0 32px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.hero-photo {
+  flex: 0 0 auto;
+  position: relative;
+  width: 260px;
+  height: 260px;
+  margin-right: 32px;
+}
+
+.hero-photo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--color-accent-light);
+  border-radius: 40px;
+  transform: translate(18px, 18px);
+  z-index: 0;
+}
+
+.hero-photo img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 32px;
+  display: block;
+}
+
+.tagline {
+  font-size: 1.15rem;
+  color: var(--color-accent);
+  margin: 0 0 16px;
+  font-weight: 600;
+}
+
+/* ---------- Page header (non-home pages) ---------- */
+.page-header {
+  padding: 56px 24px 8px;
+}
+
+.page-header h1 {
+  font-size: 2.3rem;
+  margin: 0 0 12px;
+}
+
+.page-header .hero-summary {
+  margin-bottom: 8px;
+}
+
+/* ---------- Work ---------- */
+.work {
+  padding: 32px 24px 64px;
+}
+
+.work h2,
+.contact h2 {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-muted);
+  margin-bottom: 24px;
+}
+
+.case-card {
+  display: flex;
+  align-items: stretch;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.case-card:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.case-card-thumb {
+  flex: 0 0 240px;
+  background: var(--color-border);
+}
+
+.case-card-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.case-card-text {
+  padding: 28px;
+  flex: 1;
+}
+
+.case-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.4rem;
+}
+
+.case-card p {
+  color: var(--color-muted);
+  margin: 0 0 16px;
+}
+
+.case-card-link {
+  font-weight: 600;
+  color: var(--color-accent);
+  font-size: 0.95rem;
+}
+
+/* ---------- About ---------- */
+.about {
+  padding: 16px 24px 64px;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.about-text {
+  flex: 1 1 420px;
+}
+
+.about-photo {
+  flex: 0 0 260px;
+  max-width: 100%;
+}
+
+.about-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+/* ---------- Contact ---------- */
+.contact {
+  padding: 16px 24px 80px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 480px;
+  margin-top: 24px;
+}
+
+.contact-form label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 10px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--color-text);
+}
+
+.contact-form button {
+  margin-top: 20px;
+  align-self: flex-start;
+}
+
+.hero-summary a {
+  color: var(--color-accent);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  border-top: 1px solid var(--color-border);
+  padding: 24px 0;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+/* ---------- Case study pages ---------- */
+.case-header {
+  padding: 56px 24px 32px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.case-header .eyebrow {
+  margin-bottom: 10px;
+}
+
+.case-header h1 {
+  font-size: 2.3rem;
+  margin: 0 0 12px;
+}
+
+.case-header .tagline {
+  font-family: var(--font-body);
+}
+
+.case-meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  gap: 20px 40px;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid var(--color-border);
+}
+
+.case-meta strong {
+  display: block;
+  color: var(--color-text);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+
+.case-cover-link {
+  display: block;
+  margin-top: 32px;
+  cursor: zoom-in;
+}
+
+.case-cover {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  display: block;
+}
+
+.case-body {
+  padding: 48px 24px 80px;
+}
+
+.case-body h2 {
+  font-size: 1.6rem;
+  margin-top: 56px;
+  margin-bottom: 16px;
+}
+
+.case-body h2:first-child {
+  margin-top: 0;
+}
+
+.case-body h3 {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+
+.case-body ul {
+  padding-left: 1.2em;
+}
+
+.case-body li {
+  margin-bottom: 6px;
+}
+
+.img-link {
+  display: block;
+  margin: 24px 0;
+  cursor: zoom-in;
+}
+
+/* When a caption immediately follows, tighten the gap instead of the full
+   paragraph spacing so the caption reads as attached to its image. */
+.img-link:has(+ .image-caption) {
+  margin-bottom: 8px;
+}
+
+.case-body img,
+.img-pair img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  display: block;
+  margin: 0;
+}
+
+.img-pair {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.img-pair figure {
+  flex: 1 1 260px;
+  margin: 0;
+}
+
+.img-pair .img-link {
+  margin: 0;
+}
+
+.img-pair img {
+  width: 100%;
+}
+
+.img-pair figcaption {
+  margin-top: 8px;
+}
+
+.img-pair figure:last-child figcaption {
+  text-align: right;
+}
+
+.image-caption {
+  margin: 0 0 24px;
+}
+
+figcaption,
+.image-caption {
+  color: var(--color-muted);
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+/* ---------- GIF player: static poster + click-to-play ---------- */
+.gif-player {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 24px 0;
+  padding: 0;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  overflow: hidden;
+  background: none;
+  cursor: pointer;
+}
+
+.gif-player img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+}
+
+.gif-player .play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(28, 28, 26, 0.72);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  transition: background 0.15s ease;
+}
+
+.gif-player .play-btn svg {
+  width: 22px;
+  height: 22px;
+  margin-left: 3px;
+}
+
+.gif-player:hover .play-btn {
+  background: var(--color-accent);
+}
+
+.gif-player.playing .play-btn {
+  display: none;
+}
+
+blockquote {
+  margin: 28px 0;
+  padding: 4px 0 4px 20px;
+  border-left: 3px solid var(--color-accent);
+  color: var(--color-text);
+  font-size: 1.05rem;
+}
+
+.stat-row {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin: 32px 0;
+  padding: 24px;
+  background: var(--color-accent-wash);
+  border-radius: 8px;
+}
+
+.stat {
+  min-width: 140px;
+}
+
+.stat .stat-num {
+  font-family: var(--font-display);
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  display: block;
+}
+
+.stat .stat-label {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+/* ---------- Responsive ---------- */
+
+/* Tablet and mobile both stack the hero photo above the text; only true
+   desktop widths show the side-by-side layout. */
+@media (max-width: 860px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 32px;
+  }
+  .hero-photo {
+    margin-right: 0;
+  }
+  .hero-actions {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+  .case-header h1,
+  .page-header h1 {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  /* Hamburger nav: logo always stays put; links collapse into a dropdown. */
+  .nav-toggle {
+    display: flex;
+  }
+  .site-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px 20px;
+    gap: 4px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+  }
+  .site-nav.open {
+    display: flex;
+  }
+  .site-nav a {
+    margin-left: 0;
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  .hero {
+    padding: 40px 20px 32px;
+  }
+  .hero h1 {
+    font-size: 1.9rem;
+  }
+  .hero-photo {
+    width: 200px;
+    height: 200px;
+  }
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+  .hero-actions .btn {
+    width: auto;
+    flex: 1 1 140px;
+  }
+  .case-header,
+  .page-header {
+    padding: 40px 20px 24px;
+  }
+  .case-header h1 {
+    font-size: 1.6rem;
+  }
+  .case-meta {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .case-body {
+    padding: 32px 20px 56px;
+  }
+  .stat-row {
+    gap: 20px;
+    padding: 18px;
+  }
+  .case-card {
+    flex-direction: column;
+  }
+  .case-card-thumb {
+    flex: 0 0 160px;
+    width: 100%;
+  }
+  .about {
+    gap: 24px;
+  }
+  .about-photo {
+    flex-basis: 100%;
+    max-width: 320px;
+  }
+}

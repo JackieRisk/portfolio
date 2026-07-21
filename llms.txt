@@ -1,0 +1,15 @@
+# Jackie Risk
+
+> Senior Product Designer with 10 years of experience leading end-to-end UX across SaaS, enterprise, and federal platforms. Currently at Workleap, focused on information architecture, navigation, design systems, and AI-augmented prototyping.
+
+## Pages
+
+- [About](about.html): Background, experience at Workleap and EAGLE6, and working style.
+- [Work](work.html): Selected case studies.
+- [Reimagining Workleap](case-studies/workleap.html): Platform-wide information architecture and navigation redesign for a B2B HR SaaS product, including a working Next.js prototype built through AI-augmented prototyping.
+- [Officevibe Top Manager Awards](case-studies/officevibe-awards.html): A product-led growth experiment: a shareable recognition feature that drove a 69% engagement rate and roughly 150,000 organic LinkedIn impressions.
+- [Contact](contact.html): Get in touch via the contact form.
+
+## Notes
+
+Jackie Risk is a UX/product designer, not a language model or software product. This file exists to help AI tools accurately summarize her background and work.

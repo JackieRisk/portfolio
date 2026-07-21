@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jackie Risk | Reimagining Workleap</title>
+  <meta name="description" content="How 3 designers unified a fragmented HR platform: information architecture, navigation, design system, and a working code prototype in 6 weeks.">
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "Reimagining Workleap: A Platform from the Ground Up",
+    "author": { "@type": "Person", "name": "Jackie Risk" },
+    "about": "Platform-wide UX redesign unifying information architecture, navigation, and settings for a B2B HR SaaS product.",
+    "keywords": "UX design, information architecture, design systems, SaaS, accessibility, WCAG, AI-augmented prototyping"
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a href="../index.html" class="logo">Jackie Risk</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav aria-label="Primary" id="primary-nav" class="site-nav">
+        <a href="../work.html" aria-current="page">Work</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="case-header wrap">
+      <span class="eyebrow">Information Architecture · Navigation · Design Systems</span>
+      <h1>Reimagining Workleap: A Platform from the Ground Up</h1>
+      <p class="tagline">How 3 designers unified a fragmented HR platform: IA, navigation, design system, and a working code prototype in 6 weeks.</p>
+
+      <div class="case-meta">
+        <div>
+          <strong>Role</strong>
+          Senior Product Designer: owned platform IA, global navigation, settings, and compensation
+        </div>
+        <div>
+          <strong>Timeline</strong>
+          6-week sprint before a company-wide demo
+        </div>
+        <div>
+          <strong>Output</strong>
+          Working Next.js prototype + Figma source of truth + pattern library
+        </div>
+        <div>
+          <strong>Tools</strong>
+          Figma, FigJam, Claude, Mixpanel, LogRocket
+        </div>
+      </div>
+
+      <a href="../assets/images/workleap/cover.png" target="_blank" rel="noopener" class="case-cover-link">
+        <img src="../assets/images/workleap/cover.png" alt="Cover image for the Reimagining Workleap case study" class="case-cover">
+      </a>
+    </div>
+
+    <div class="case-body wrap">
+
+      <h2>TL;DR</h2>
+      <p>
+        I co-led the end-to-end redesign of Workleap as one platform: information architecture,
+        navigation, settings, and core UI patterns. I shipped a working Next.js prototype that
+        became the source of truth for stakeholder alignment, engineering scope, and downstream
+        design. WCAG 2.2 AA was the floor, AAA the target. AI-augmented prototyping made the
+        timeline possible.
+      </p>
+
+      <h2>The Challenge</h2>
+      <p>
+        Workleap, a B2B SaaS HR platform, had grown into a constellation of products, each with its own navigation,
+        settings, terminology, and visual logic. The brief: unify it all into one platform. The
+        guidance: vague. The timeline: tight.
+      </p>
+      <p>
+        I was given a strategic ambition and asked to shape it into something concrete enough to
+        align stakeholders, validate with users, and hand to engineering, all within a window
+        typically reserved for a single feature, not a platform redesign.
+      </p>
+
+      <a href="../assets/images/workleap/before-after.png" target="_blank" rel="noopener" class="img-link">
+        <img src="../assets/images/workleap/before-after.png" alt="Before and after comparison: fragmented product silos versus a unified global navigation shell">
+      </a>
+      <p class="image-caption">Before: fragmented product silos with drifting UI patterns, duplicated settings, and no cross-product support. After: a single global nav carries users across a unified shell.</p>
+
+      <h2>What I Owned</h2>
+      <ul>
+        <li>End-to-end information architecture for the unified platform</li>
+        <li>Navigation model spanning multiple products and user roles</li>
+        <li>Settings architecture, org settings, compensation, and the connective tissue most teams skip or punt</li>
+        <li>Collaborated on core UI patterns: tab navigation, dashboards, data tables, import flows, methodology disclosures</li>
+        <li>Collaborated on a full design system evolution to support the shift to an AI-first product</li>
+        <li>A working Next.js prototype built through AI-directed development</li>
+        <li>Accessibility standards (WCAG 2.2 AA, AAA where possible) baked in from day one</li>
+      </ul>
+
+      <h2>Why This Matters Now</h2>
+      <p>
+        Platform consolidation isn't just a UX problem. It's a retention and revenue problem.
+        Fragmented tools create fragmented habits; users who don't discover cross-product value
+        churn. This redesign was the foundation for Workleap's positioning as a unified people
+        management platform rather than a bundle of separate tools. Getting the IA right wasn't a
+        craft exercise; it was a product bet.
+      </p>
+
+      <h2>Approach</h2>
+
+      <h3>1. Translate vague into concrete</h3>
+      <p>
+        I reframed the brief into a set of explicit design questions and constraints. What does
+        "unified" actually mean for users? Which surfaces are load-bearing? Which can wait? I
+        documented assumptions, surfaced tradeoffs, and earned alignment before any pixels were
+        pushed.
+      </p>
+
+      <a href="../assets/images/workleap/scope.png" target="_blank" rel="noopener" class="img-link">
+        <img src="../assets/images/workleap/scope.png" alt="Scope document breaking the ambiguous brief into concrete design questions and constraints">
+      </a>
+
+      <h3>2. Research the landscape</h3>
+      <p>
+        I ran competitive teardowns of HubSpot, Rippling, Salesforce, and Airtable, studying how
+        mature B2B platforms handle multi-product navigation, settings, and admin surfaces. I
+        paired that with NN/g heuristic evaluation and audits of current Workleap usage, weighing
+        both, but knowing current behavior reflects today's silos, not tomorrow's potential.
+      </p>
+      <p>
+        The teardowns revealed a consistent pattern among mature platforms: global nav with clear
+        admin separation, persistent context across products, and settings structured by persona,
+        not feature area. That became the model.
+      </p>
+
+      <a href="../assets/images/workleap/competitive-teardown.png" target="_blank" rel="noopener" class="img-link">
+        <img src="../assets/images/workleap/competitive-teardown.png" alt="Competitive teardown comparing navigation and settings patterns across HubSpot, Rippling, Salesforce, and Airtable">
+      </a>
+
+      <h3>3. Architect the platform</h3>
+      <p>
+        IA was the keystone. I redesigned the global navigation, settings hierarchy, and
+        product-to-product transitions so a single mental model could carry users across
+        previously walled-off surfaces.
+      </p>
+      <p>
+        The hardest call was settings. Each product had grown its own settings surface
+        independently: duplicated controls, conflicting terminology, no shared model. I had to
+        decide whether to normalize everything at once or layer in a global shell while leaving
+        product-level settings in place. I chose the latter: a two-tier model with global admin at
+        the top and product configuration nested underneath. It was the less elegant solution on
+        paper, but the one engineering could actually scope and ship incrementally.
+      </p>
+
+      <div class="img-pair">
+        <figure>
+          <a href="../assets/images/workleap/nav-before.png" target="_blank" rel="noopener" class="img-link">
+            <img src="../assets/images/workleap/nav-before.png" alt="Old navigation model before the redesign">
+          </a>
+          <figcaption>Before: per-product navigation</figcaption>
+        </figure>
+        <figure>
+          <a href="../assets/images/workleap/nav-after.png" target="_blank" rel="noopener" class="img-link">
+            <img src="../assets/images/workleap/nav-after.png" alt="New unified navigation model after the redesign">
+          </a>
+          <figcaption>After: unified global navigation</figcaption>
+        </figure>
+      </div>
+
+      <h3>4. Design the system, not the screen</h3>
+      <p>
+        Rather than designing screens in isolation, I established reusable patterns first (widget
+        cards, segmented controls, tab navigation, methodology disclosures), then composed flows
+        from them. Every pattern was documented with usage rules, props, and accessibility specs.
+      </p>
+
+      <a href="../assets/images/workleap/teams-overview.png" target="_blank" rel="noopener" class="img-link">
+        <img src="../assets/images/workleap/teams-overview.png" alt="Teams overview screen showing reusable component patterns in use">
+      </a>
+
+      <h3>5. Prototype in working code</h3>
+      <p>
+        I directed an AI agent to build a production-quality Next.js prototype of the new
+        platform, with real interactions, dark mode, responsive behavior, and live data. Not a
+        clickable Figma flow: working software stakeholders could actually use it. This collapsed
+        the discovery-to-validation cycle by an order of magnitude and gave engineering a concrete
+        reference to scope against.
+      </p>
+
+      <div class="gif-player" data-gif="../assets/images/workleap/dashboard-demo.gif" role="button" tabindex="0" aria-label="Play animated demo of the working Next.js prototype">
+        <img src="../assets/images/workleap/dashboard-demo-poster.png" alt="The working Next.js prototype of the agent-powered dashboard">
+        <button class="play-btn" aria-hidden="true" tabindex="-1">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        </button>
+      </div>
+
+      <h3>6. Build for everyone</h3>
+      <p>
+        Every pattern was checked against WCAG 2.2 AA, with AAA targeted where possible: 7:1
+        contrast on body copy, 44px touch targets, focus-visible rings, full keyboard
+        navigability, screen-reader semantics, and never conveying meaning by color alone. I built
+        out documentation for the dev team to use Intent UI, ensuring accessibility was a priority
+        from day one, not a pass at the end.
+      </p>
+
+      <a href="../assets/images/workleap/accessibility.png" target="_blank" rel="noopener" class="img-link">
+        <img src="../assets/images/workleap/accessibility.png" alt="Accessibility documentation covering contrast, touch targets, and keyboard navigation">
+      </a>
+
+      <h2>Selected Work</h2>
+
+      <h3>Agent-powered dashboard</h3>
+      <p>
+        The new home surface. Widget cards surface key metrics with editorial typography;
+        sensitive metrics include a "How is this calculated?" disclosure pattern instead of
+        always-visible banners.
+      </p>
+      <blockquote>
+        The "How is this calculated?" disclosure pattern was a deliberate trust decision: rather
+        than hiding methodology or surfacing it with always-visible banners that create noise, we
+        made transparency on-demand. Users who need to understand the number can; users who trust
+        it can move on.
+      </blockquote>
+      <a href="../assets/images/workleap/dashboard-data.png" target="_blank" rel="noopener" class="img-link">
+        <img src="../assets/images/workleap/dashboard-data.png" alt="Detail view of a dashboard widget with a methodology disclosure">
+      </a>
+
+      <h3>Settings → People → Import flow</h3>
+      <p>
+        A three-step wizard for bulk-importing employee data. Solved for ambiguity around update
+        behavior, field mapping at scale, and error visibility before commit.
+      </p>
+      <blockquote>
+        The three-step wizard was scoped specifically to solve for the moment of highest anxiety:
+        "what happens to existing data?" Error visibility before commit, not after, was the core
+        design principle. Users needed to see conflicts before they caused damage, not discover
+        them in a support ticket.
+      </blockquote>
+      <div class="gif-player" data-gif="../assets/images/workleap/import-flow-demo.gif" role="button" tabindex="0" aria-label="Play animated demo of the three-step bulk import wizard">
+        <img src="../assets/images/workleap/import-flow-demo-poster.png" alt="The three-step bulk import wizard">
+        <button class="play-btn" aria-hidden="true" tabindex="-1">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        </button>
+      </div>
+
+      <h3>Compensation, redesigned end-to-end</h3>
+      <p>
+        Rebuilt the product from the ground up to reduce ramp-up time and cognitive load.
+        Designed sensitive-data surfaces with health cards, methodology disclosures, and segment
+        controls for cutting data by gender or ethnicity. Designed to inform without overwhelming.
+      </p>
+      <blockquote>
+        This surface handles some of the most sensitive data an HR platform can hold. The design
+        challenge wasn't making it powerful, it was making it trustworthy. Segment controls for
+        cutting by gender or ethnicity required careful thought about how to present disparity
+        data without inadvertently stigmatizing groups or creating legal exposure for customers.
+      </blockquote>
+      <div class="gif-player" data-gif="../assets/images/workleap/compensation-demo.gif" role="button" tabindex="0" aria-label="Play animated demo of the redesigned compensation module">
+        <img src="../assets/images/workleap/compensation-demo-poster.png" alt="The redesigned compensation module">
+        <button class="play-btn" aria-hidden="true" tabindex="-1">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        </button>
+      </div>
+
+      <h2>Outcome</h2>
+      <ul>
+        <li>A working, end-to-end vision prototype that became the source of truth for stakeholder alignment, engineering scoping, and downstream design work.</li>
+        <li>The prototype has become the foundation for Q3 roadmap planning.</li>
+        <li>A documented IA model and component pattern library the broader design team can build against.</li>
+        <li>A new internal capability: AI-augmented prototyping as a repeatable design practice, validated through this project.</li>
+        <li>The prototype was presented company-wide in May 2026. Engineering is actively scoping the build now, with a roadmap in place. Early market validation is promising: the manager agent concept the prototype helped define has already generated two new sales.</li>
+      </ul>
+
+      <h2>Reflection</h2>
+      <p>
+        Working without a PM required me to hold both the design vision and the strategic
+        alignment work simultaneously: facilitating stakeholder reviews, making scope calls, and
+        keeping the team oriented on what mattered for the demo versus what could be deferred.
+        That muscle strengthened through this project in ways I wouldn't have gotten otherwise.
+      </p>
+      <p>
+        If I were doing it again, I'd have forced at least two structured user touchpoints
+        earlier, even lightweight ones. The most ambiguous flows (cross-product navigation for
+        users who only use one product, settings for mixed admin/manager roles) would have
+        benefited from even a single session before we locked the prototype. The tradeoff was
+        real: we needed working software by a fixed date, and user research takes time. I made
+        the call to move; I'd make it earlier next time.
+      </p>
+
+      <h2>Skills Applied</h2>
+      <p>
+        <strong>Strategy &amp; research:</strong> UX strategy, information architecture,
+        competitive analysis, heuristic evaluation (NN/g), discovery, synthesis, scoping under
+        ambiguity.
+      </p>
+      <p>
+        <strong>Design craft:</strong> Interaction design, visual design, component pattern
+        design, settings and admin UX, navigation design, dashboard design, data visualization,
+        microcopy.
+      </p>
+      <p>
+        <strong>Systems &amp; scale:</strong> Design systems, design tokens, component
+        architecture, dark mode and theming, responsive design.
+      </p>
+      <p>
+        <strong>AI-augmented practice:</strong> AI-directed prototyping, prompt engineering,
+        agentic workflow design, AI design partnership.
+      </p>
+      <p>
+        <strong>Accessibility:</strong> WCAG 2.2 AA and AAA, inclusive and universal design,
+        keyboard navigation, screen-reader semantics, color contrast standards.
+      </p>
+      <p>
+        <strong>Cross-functional:</strong> Stakeholder alignment, design QA, partnering with
+        engineering, facilitation.
+      </p>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; 2026 Jackie Risk</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

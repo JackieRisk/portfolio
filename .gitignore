@@ -1,0 +1,6 @@
+# Local tooling config, not part of the site
+.claude/
+
+# Unused reference files not linked from the site (keeps the repo lean)
+assets/images/*.deck
+assets/images/pingboard.png
