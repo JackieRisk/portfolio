@@ -314,6 +314,17 @@ textarea:focus-visible {
   font-size: 0.95rem;
 }
 
+.more-work {
+  margin-top: 12px;
+  color: var(--color-muted);
+}
+
+.more-work a {
+  color: var(--color-accent);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 /* ---------- About ---------- */
 .about {
   padding: 16px 24px 64px;
