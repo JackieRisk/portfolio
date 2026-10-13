@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jackie Risk | EAGLE6 Status Dashboard</title>
-  <meta name="description" content="Dashboards for VA stakeholders and analysts, designed to support the department's migration from the legacy MUMPS system to the Cerner electronic health record platform.">
+  <meta name="description" content="How I designed dashboards for VA stakeholders and analysts to understand the impact of infrastructure changes during the migration from the legacy MUMPS system to the Cerner electronic health record platform.">
   <link rel="stylesheet" href="../assets/css/style.css">
 
   <script type="application/ld+json">
@@ -13,8 +13,8 @@
     "@type": "CreativeWork",
     "name": "EAGLE6 Status Dashboard Case Study",
     "author": { "@type": "Person", "name": "Jackie Risk" },
-    "about": "Status dashboards for Department of Veterans Affairs stakeholders and analysts supporting the migration from the legacy MUMPS system to the Cerner electronic health record platform.",
-    "keywords": "UX design, dashboard design, data visualization, enterprise UX, federal, stakeholder collaboration, prototyping, usability testing"
+    "about": "Dashboards for Department of Veterans Affairs stakeholders and analysts to understand the impact of infrastructure changes during the migration from the legacy MUMPS system to the Cerner electronic health record platform.",
+    "keywords": "principal product designer, enterprise UX, dashboard design, data visualization, federal, government, healthcare IT, EHR migration, cybersecurity, stakeholder collaboration, prototyping, usability testing, iterative design, agile"
   }
   </script>
 </head>
@@ -36,22 +36,30 @@
 
   <main>
     <div class="case-header wrap">
-      <span class="eyebrow">Data Visualization · Dashboard Design · Federal</span>
+      <span class="eyebrow">Enterprise UX · Data Visualization · Federal Healthcare</span>
       <h1>EAGLE6 Status Dashboard</h1>
-      <p class="tagline">Dashboards for VA stakeholders and analysts, designed to support the department's migration from the legacy MUMPS system to the Cerner electronic health record platform.</p>
+      <p class="tagline">Designing dashboards that help VA stakeholders and analysts understand the impact of infrastructure changes during the move from MUMPS to Cerner.</p>
 
       <div class="case-meta">
         <div>
           <strong>Role</strong>
-          Lead Product Designer
+          Principal Product Designer
         </div>
         <div>
           <strong>Timeline</strong>
           February to March 2020
         </div>
         <div>
-          <strong>Client</strong>
-          U.S. Department of Veterans Affairs, through EAGLE6
+          <strong>Team</strong>
+          EAGLE6 backend developers, with VA stakeholders and analysts as the users
+        </div>
+        <div>
+          <strong>Scope</strong>
+          Dashboard UX, data visualization, prototyping, user testing
+        </div>
+        <div>
+          <strong>Output</strong>
+          Tested prototypes and a demo-ready dashboard (mockups shown here)
         </div>
         <div>
           <strong>Tools</strong>
@@ -68,37 +76,64 @@
 
       <h2>TL;DR</h2>
       <p>
-        I was the lead designer on dashboards for VA stakeholders and analysts, built to support
-        the department's migration from the legacy MUMPS system to the Cerner electronic health
-        record platform. Two rounds of prototyping, testing, and stakeholder feedback on a tight
-        timeline produced a functional, demo-ready dashboard.
+        As Principal Product Designer at EAGLE6, I designed dashboards for VA stakeholders and
+        analysts during the department's migration from the legacy MUMPS system to the Cerner
+        electronic health record platform. Before changing any piece of infrastructure, the VA
+        needed to know what it touched. I worked with backend developers to decide which data to
+        surface and how to visualize it, then took the design through two rounds of testing and
+        stakeholder feedback to a demo-ready dashboard.
       </p>
 
-      <h2>Overview</h2>
+      <h2>The Challenge</h2>
       <p>
-        EAGLE6 partnered with the Department of Veterans Affairs to facilitate their transition
-        from the legacy MUMPS system to the Cerner electronic health record platform. EAGLE6 is an
-        application built to secure large enterprises by detecting unknown vulnerabilities before
-        they expose systems to risk.
+        The VA, a vast U.S. government organization, was running on extremely outdated
+        technology, both physical and digital. Modernizing meant migrating from the legacy MUMPS
+        system to Cerner, and in a system that old, almost nothing can be changed in isolation.
+        To update anything, the VA first needed to know the impact of any single piece of
+        infrastructure.
       </p>
+      <blockquote>
+        If we remove a server here, does it take down a hospital?
+      </blockquote>
       <p>
-        Part of the VA's need was knowing which hospitals and clinics were not up to their gold
-        standard and how to remediate that. EAGLE6 could also detect external links to
-        non-networked systems and alert analysts, so that connections to things like heart
-        monitors and EKG machines would not be interrupted.
-      </p>
-      <p>
-        Due to the sensitive nature of the project, the data has been scrubbed and the live app is
-        unavailable to demo.
+        These were high-impact, high-risk decisions. EAGLE6's goal was to enable the migration
+        with little to no interruption to the doctors and veterans who depend on these systems
+        to work and live.
       </p>
 
-      <h2>The Problem</h2>
+      <h3>Where EAGLE6 fit</h3>
       <p>
-        The VA, a vast organization, faced challenges due to outdated technology systems,
-        necessitating a comprehensive modernization effort. As part of that initiative, they
-        needed to migrate to Cerner. Migration comes with risks and challenges, and EAGLE6's goal
-        was to enable it with little to no interruption to the doctors and veterans who depend on
-        these systems to work and live.
+        EAGLE6 is an application built to secure large enterprises by detecting unknown
+        vulnerabilities before they expose systems to risk. For the VA, that meant knowing which
+        hospitals and clinics were not up to their gold standard and how to remediate that.
+        EAGLE6 could also detect external links to non-networked systems and alert analysts, so
+        that connections to things like heart monitors and EKG machines would not be
+        interrupted.
+      </p>
+
+      <h3>A note on the imagery</h3>
+      <p>
+        Because of the security requirements, and the risk of exposing protected health
+        information (PHI), I can't show anything real. Every image on this page is mockup
+        imagery with scrubbed data, and the live app is not available to demo.
+      </p>
+
+      <h2>My Role &amp; Scope</h2>
+      <p>I was the Principal Product Designer on this effort and owned the end-to-end UX:</p>
+      <ul>
+        <li>Turning the pain points of VA stakeholders and analysts into design problems.</li>
+        <li>Working with backend developers to determine what data we could surface to solve those problems.</li>
+        <li>Prototyping data visualization approaches, from whiteboard sketches to high-fidelity dashboards, and testing them with users.</li>
+        <li>Folding feedback from multiple testing sessions and stakeholders into a second iteration.</li>
+        <li>Working with development to get a demo-ready product in front of the business.</li>
+      </ul>
+
+      <h2>Approach</h2>
+
+      <h3>1. Ideate and prototype at the same time</h3>
+      <p>
+        Given the accelerated timeline, we started ideation and prototyping together to speed up
+        solution development.
       </p>
 
       <div class="img-pair">
@@ -121,14 +156,11 @@
       </a>
       <p class="image-caption">The working board, zoomed out.</p>
 
-      <h2>Define and Ideate</h2>
-      <p>
-        Given the project's accelerated timeline, we started ideation and prototyping at the same
-        time to speed up solution development.
-      </p>
+      <h3>2. Design around the data we could surface</h3>
       <p>
         Once I had the pain points, I worked with our developers to determine what data we could
-        surface that would help solve the users' problems.
+        surface that would help solve the users' problems. The available data set the boundaries
+        for what each dashboard could show.
       </p>
 
       <a href="../assets/images/eagle6-status-dashboard/iteration-1-dashboard.png" target="_blank" rel="noopener" class="img-link">
@@ -138,29 +170,37 @@
         <img src="../assets/images/eagle6-status-dashboard/iteration-1-facility-view.jpg" alt="First iteration layout with facility status cards, data reconciliation charts, vulnerability remediation, and a task breakdown timeline">
       </a>
 
-      <h2>Testing and Iteration 2</h2>
+      <h3>3. Test, then refine</h3>
       <p>
-        Following multiple testing sessions and stakeholder feedback, I began the second
-        iteration and refined the design based on what users told us. Armed with a better
-        understanding of their needs, and the data our backend developers could make available, I
-        prototyped several methods of data visualization to test with our users.
+        Following multiple testing sessions and stakeholder feedback, I began a second
+        iteration. With a better understanding of user needs, and the data our backend
+        developers could make available, I prototyped several methods of data visualization to
+        test with users.
       </p>
 
       <a href="../assets/images/eagle6-status-dashboard/iteration-2-strategic-plan.png" target="_blank" rel="noopener" class="img-link">
         <img src="../assets/images/eagle6-status-dashboard/iteration-2-strategic-plan.png" alt="Second iteration view with a strategic plan timeline, medical facility performance, project completion, and department plan progress">
       </a>
 
-      <h2>Conclusion</h2>
+      <h3>4. Hand off to a demo</h3>
       <p>
-        Because of the tight timeline, I had time for two rounds of iterating, testing, and
-        feedback before working with development to get a demo-ready product available to the
-        business.
+        The timeline allowed for two rounds of iterating, testing, and feedback. After that, I
+        worked with development to get a demo-ready product available to the business.
       </p>
+
+      <h2>Results &amp; Impact</h2>
+      <ul>
+        <li>Delivered a functional, demo-ready dashboard for VA stakeholders and analysts within an accelerated timeline.</li>
+        <li>Completed two rounds of iteration, testing, and feedback before handing off to development.</li>
+        <li>Shaped what the dashboards could show by working directly with backend developers on the data that was available.</li>
+      </ul>
+
+      <h2>Reflection</h2>
       <p>
-        Despite the project's scope and stringent timeline, our team delivered a functional
-        dashboard, which came down to close collaboration and agile design practices. Data
-        visualization is something I've become enamored with, and I continue to study how best to
-        present data for concise, accurate consumption by users.
+        The project ran on a tight timeline, and it worked because of close collaboration and
+        agile design practices. It also deepened my interest in data visualization. I continue
+        to study how best to present data so users can consume it concisely and accurately,
+        which matters most when the decision on the other end carries real risk.
       </p>
 
       <h2>Skills Applied</h2>
@@ -173,8 +213,13 @@
         iterative design.
       </p>
       <p>
+        <strong>Domain &amp; context:</strong> Enterprise UX, federal and government products,
+        healthcare IT (EHR migration), cybersecurity software, designing for high-risk,
+        high-impact decisions, working within sensitive-data constraints.
+      </p>
+      <p>
         <strong>Cross-functional:</strong> Partnering with backend developers on available data,
-        agile delivery, enterprise and federal stakeholders.
+        agile delivery, stakeholder collaboration.
       </p>
 
     </div>
