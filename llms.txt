@@ -8,6 +8,7 @@
 - [Work](work.html): Selected case studies.
 - [Reimagining Workleap](case-studies/workleap.html): Platform-wide information architecture and navigation redesign for a B2B HR SaaS product, including a working Next.js prototype built through AI-augmented prototyping.
 - [Officevibe Top Manager Awards](case-studies/officevibe-awards.html): A product-led growth experiment: a shareable recognition feature that drove a 69% engagement rate and roughly 150,000 organic LinkedIn impressions.
+- [EAGLE6 Status Dashboard](case-studies/eagle6-status-dashboard.html): Dashboards for U.S. Department of Veterans Affairs stakeholders and analysts, designed to support the migration from the legacy MUMPS system to the Cerner electronic health record platform. Two rounds of testing and iteration on a tight timeline.
 - [Contact](contact.html): Get in touch via the contact form.
 
 ## Notes
