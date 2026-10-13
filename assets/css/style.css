@@ -85,17 +85,6 @@ textarea:focus-visible {
   background: #5a3486;
 }
 
-.btn-secondary {
-  background: transparent;
-  color: var(--color-text);
-  border-color: var(--color-text);
-}
-
-.btn-secondary:hover {
-  background: var(--color-text);
-  color: #fff;
-}
-
 /* ---------- Header ---------- */
 .site-header {
   position: relative;
@@ -137,7 +126,7 @@ textarea:focus-visible {
 }
 
 .site-nav a:hover,
-.site-nav a[aria-current="page"] {
+.site-nav a[aria-current] {
   color: var(--color-accent);
 }
 
@@ -193,10 +182,8 @@ textarea:focus-visible {
   margin: 0 0 32px;
 }
 
-.hero-actions {
-  display: flex;
-  gap: 14px;
-  flex-wrap: wrap;
+.hero .hero-summary {
+  margin-bottom: 0;
 }
 
 .hero-photo {
@@ -249,8 +236,12 @@ textarea:focus-visible {
 }
 
 /* ---------- Work ---------- */
+.work-section {
+  border-top: 1px solid var(--color-border);
+}
+
 .work {
-  padding: 32px 24px 64px;
+  padding: 40px 24px 64px;
 }
 
 .work h2,
@@ -674,9 +665,6 @@ blockquote {
   .hero-photo {
     margin-right: 0;
   }
-  .hero-actions {
-    justify-content: center;
-  }
 }
 
 @media (max-width: 768px) {
@@ -734,10 +722,6 @@ blockquote {
   .btn {
     width: 100%;
     text-align: center;
-  }
-  .hero-actions .btn {
-    width: auto;
-    flex: 1 1 140px;
   }
   .case-header,
   .page-header {
