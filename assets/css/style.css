@@ -190,10 +190,15 @@ textarea:focus-visible {
   margin: 16px 0 0;
 }
 
-.hero-links a {
+.hero-links a,
+.more-work a {
   color: var(--color-accent);
   font-weight: 600;
   text-decoration: underline;
+}
+
+.more-work {
+  margin: 12px 0 0;
 }
 
 .hero-photo {
