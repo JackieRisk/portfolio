@@ -186,6 +186,16 @@ textarea:focus-visible {
   margin-bottom: 0;
 }
 
+.hero-links {
+  margin: 16px 0 0;
+}
+
+.hero-links a {
+  color: var(--color-accent);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 .hero-photo {
   flex: 0 0 auto;
   position: relative;
@@ -236,22 +246,17 @@ textarea:focus-visible {
 }
 
 /* ---------- Work ---------- */
-.work-section {
-  border-top: 1px solid var(--color-border);
-}
-
 .work {
-  padding: 40px 24px 64px;
+  padding: 16px 24px 64px;
 }
 
-.work h2,
-.contact h2 {
+.work h2 {
   font-family: var(--font-body);
   font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--color-muted);
+  letter-spacing: 0.1em;
+  color: var(--color-accent);
   margin-bottom: 24px;
 }
 
@@ -310,17 +315,6 @@ textarea:focus-visible {
   font-weight: 600;
   color: var(--color-accent);
   font-size: 0.95rem;
-}
-
-.more-work {
-  margin-top: 12px;
-  color: var(--color-muted);
-}
-
-.more-work a {
-  color: var(--color-accent);
-  font-weight: 600;
-  text-decoration: underline;
 }
 
 /* ---------- About ---------- */
@@ -683,6 +677,9 @@ blockquote {
     flex-direction: column-reverse;
     text-align: center;
     gap: 32px;
+  }
+  .hero-text {
+    flex: 0 0 auto;
   }
   .hero-photo {
     margin-right: 0;
