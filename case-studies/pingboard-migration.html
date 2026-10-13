@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jackie Risk | Migrating Pingboard into Workleap</title>
+  <meta name="description" content="How I designed the customer experience for migrating existing Pingboard customers onto the unified Workleap platform: redirects, re-authentication, feature guidance, and communication across phased cohorts.">
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "Migrating Pingboard into the Workleap Platform",
+    "author": { "@type": "Person", "name": "Jackie Risk" },
+    "about": "Customer-facing UX for migrating existing Pingboard customers onto the unified Workleap platform, including login redirects, integration re-authentication, relocated-feature guidance, and a phased communication plan.",
+    "keywords": "UX design, migration UX, change management, customer journey mapping, onboarding, feature discovery, B2B SaaS, platform consolidation, cross-functional collaboration, communication design"
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a href="../index.html" class="logo">Jackie Risk</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav aria-label="Primary" id="primary-nav" class="site-nav">
+        <a href="../work.html" aria-current="page">Work</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="case-header wrap">
+      <span class="eyebrow">Migration UX · Change Management · B2B SaaS</span>
+      <h1>Migrating Pingboard into the Workleap Platform</h1>
+      <p class="tagline">Designing clarity and reassurance for customers moving onto the unified Workleap platform, one cohort at a time.</p>
+
+      <div class="case-meta">
+        <div>
+          <strong>Role</strong>
+          Senior Product Designer
+        </div>
+        <div>
+          <strong>Timeline</strong>
+          Design began January 2025 for migrations starting April 2025, rolled out in phased customer cohorts
+        </div>
+        <div>
+          <strong>Team</strong>
+          Product, Engineering, Product Marketing, Customer Success, and Platform teams, including Officevibe
+        </div>
+        <div>
+          <strong>Scope</strong>
+          Customer journey, login and navigation redirects, integration re-authentication, relocated-feature guidance, communication and onboarding plans
+        </div>
+        <div>
+          <strong>Output</strong>
+          Journey map, migration flows, redirect and error-handling experiences, onboarding and feature-discovery patterns
+        </div>
+        <div>
+          <strong>Tools</strong>
+          Figma, Intercom
+        </div>
+      </div>
+
+      <a href="../assets/images/pingboard-migration/cover.png" target="_blank" rel="noopener" class="case-cover-link">
+        <img src="../assets/images/pingboard-migration/cover.png" alt="Cover image for the Migrating Pingboard to the Workleap Platform case study, showing the Workleap Pingboard home screen with a migration banner" class="case-cover">
+      </a>
+    </div>
+
+    <div class="case-body wrap">
+
+      <h2>TL;DR</h2>
+      <p>
+        I designed the customer-facing experience for migrating existing Pingboard customers onto
+        the unified Workleap platform, so they could keep their data and workflows intact while
+        relocated features, new login URLs, and changed permissions took effect. I mapped the
+        customer journey, ranked every change by whether customers had to act on it and how soon,
+        designed the redirect and re-authentication experiences, and worked with Marketing and
+        Customer Success on communications at 90, 30, and 7 days before migration and on
+        migration day. The migration is now complete.
+      </p>
+
+      <h2>The Challenge</h2>
+      <p>
+        Pingboard customers were moving onto the unified Workleap platform to enable cross-product
+        synergy and improve customer value. For the customer, that meant a lot of change at once.
+      </p>
+
+      <h3>Challenges &amp; risks</h3>
+      <ul>
+        <li>Users had to reconnect integrations (HRIS, notifications, SSO).</li>
+        <li>Features were relocated across Workleap products (for example, Applause to Good Vibes, and Surveys and 1-on-1s to Officevibe).</li>
+        <li>The UX changed significantly: login URLs, user permissions, and deprecated features.</li>
+        <li>Confusion and frustration were real risks, given how much change customers had to manage.</li>
+      </ul>
+
+      <h3>What customers needed</h3>
+      <ul>
+        <li>Data integrity and minimal disruption.</li>
+        <li>Clear guidance for new workflows, with less friction.</li>
+        <li>A clear sense of the value of the migration.</li>
+      </ul>
+
+      <a href="../assets/images/pingboard-migration/overview-slide.png" target="_blank" rel="noopener" class="img-link">
+        <img src="../assets/images/pingboard-migration/overview-slide.png" alt="Overview slide showing the Pingboard home screen with a What's changed navigation item and two migration announcement emails">
+      </a>
+      <p class="image-caption">Overview: a new "What's changed" nav item launches the welcome modal, and badges flag what moved. Emails keep customers informed at each step.</p>
+
+      <h2>My Role &amp; Scope</h2>
+      <p>As Senior Product Designer, I owned the UX and interaction design and the user guidance and communication design for the migration, working across Product, Engineering, Customer Success, Marketing, and the platform and Officevibe teams:</p>
+      <ul>
+        <li>Mapped the customer journey to understand where migration would create friction.</li>
+        <li>Prioritized clear UX, onboarding, and feature-discovery patterns.</li>
+        <li>Designed redirection and error-handling experiences, such as login redirects and integration re-authentication prompts.</li>
+        <li>Partnered with the platform and Officevibe teams to streamline the integration of cross-platform features.</li>
+        <li>Worked with Marketing and Customer Success on communication and onboarding plans at key milestones.</li>
+        <li>Planned feedback loops (Customer Success feedback and support tickets) to inform UX improvements.</li>
+      </ul>
+
+      <h2>Approach</h2>
+
+      <h3>1. Map the customer journey</h3>
+      <p>
+        I started by mapping the journey of an existing Pingboard admin being migrated, to see
+        where friction would show up. The map separated what the customer had to do (reconnect
+        integrations, confirm billing) from the "Where's my..." questions about features that had
+        moved.
+      </p>
+      <a href="../assets/images/pingboard-migration/customer-journey-map.png" target="_blank" rel="noopener" class="img-link">
+        <img src="../assets/images/pingboard-migration/customer-journey-map.png" alt="Customer journey map for a migrating Pingboard admin, with prioritized steps starting with integrations and billing, and a list of Where's my questions about moved features">
+      </a>
+      <p class="image-caption">Customer journey map for a migrating admin, with prioritized steps and open questions.</p>
+
+      <h3>2. Rank every change by what customers had to do</h3>
+      <p>
+        Not every change deserved the same attention. I mapped each change against each plan tier
+        (Basic, Essential, and Pro) and rated it by whether the customer had to act and how soon:
+        actionable and timely, actionable, FYI and timely, or FYI. Reconnecting integrations was
+        the clearest "actionable and timely" change, so it came first in the flow.
+      </p>
+      <a href="../assets/images/pingboard-migration/plan-impact-matrix.png" target="_blank" rel="noopener" class="img-link">
+        <img src="../assets/images/pingboard-migration/plan-impact-matrix.png" alt="Matrix mapping each migration impact to the Basic, Essential, and Pro plans, color-coded as actionable and timely, actionable, FYI timely, or FYI">
+      </a>
+      <p class="image-caption">Impacts to each plan, rated by urgency and whether the customer had to act.</p>
+
+      <h3>3. Design for clarity and reassurance</h3>
+      <p>
+        The goal was for nothing to feel like it had disappeared or broken. That meant:
+      </p>
+      <ul>
+        <li><strong>Seamless login and navigation.</strong> Redirects from the old URLs to the new pingboard.workleap.com address to avoid confusion, with clear messaging around SSO reactivation and password resets.</li>
+        <li><strong>Feature guidance and education.</strong> Prompts and onboarding that explain relocated features, plus a "What's changed" nav item and badges that flag what moved.</li>
+        <li><strong>Data migration transparency.</strong> Clear status and integrity messaging for migrated data such as teams, profiles, and groups.</li>
+        <li><strong>Deprecated features.</strong> UX patterns for handling deprecated features and guiding people to new alternatives.</li>
+        <li><strong>Consistency.</strong> Visual and interaction consistency, using Workleap's UI framework.</li>
+      </ul>
+      <a href="../assets/images/pingboard-migration/migration-flow-map.png" target="_blank" rel="noopener" class="img-link">
+        <img src="../assets/images/pingboard-migration/migration-flow-map.png" alt="End-to-end migration flow map from pre-migration emails through the login redirect, welcome modal, and relocated-feature guidance screens">
+      </a>
+      <p class="image-caption">End-to-end migration flow, from the first email through relocated-feature guidance.</p>
+
+      <h3>4. Communicate at every milestone</h3>
+      <p>
+        Transparency and communication were key. I worked with Marketing and Customer Success on
+        communication and onboarding plans timed to 90, 30, and 7 days before migration, and on
+        migration day, so customers were informed at every step.
+      </p>
+
+      <h3>5. Roll out in cohorts and learn as we go</h3>
+      <p>
+        Migrating in phased customer cohorts let us improve as we went. The bulk of cohorts were
+        scheduled for April 1, 2025, and excluded companies with tricky situations that would
+        have made for a poor experience. We planned feedback loops, drawing on Customer Success
+        feedback and support tickets, to inform UX improvements between cohorts.
+      </p>
+
+      <h2>Results &amp; Impact</h2>
+      <ul>
+        <li>The migration is complete: existing Pingboard customers moved onto the unified Workleap platform in phased cohorts.</li>
+        <li>Customers were guided through prioritized steps (integrations and billing first) rather than left to find their own way.</li>
+        <li>Designed the redirect, re-authentication, and "Where's my..." experiences that every cohort moved through.</li>
+      </ul>
+
+      <h2>Reflection</h2>
+      <p>
+        Early feedback from the first two cohorts pointed to five things that mattered most.
+        These were early, anecdotal signals rather than measured results:
+      </p>
+      <ul>
+        <li><strong>Proactive guidance and clarity.</strong> Users showed less friction when clearly guided through prioritized onboarding steps, such as integrations and billing.</li>
+        <li><strong>Anticipating change-management challenges.</strong> Addressing likely points of confusion up front, like relocated features and permission mappings, appeared to reduce anxiety.</li>
+        <li><strong>Personalized onboarding.</strong> Initial reactions suggested tailored onboarding helped manage expectations.</li>
+        <li><strong>Feature discoverability.</strong> Mapping out the "Where's my..." flows likely reduced confusion about moved or changed features.</li>
+        <li><strong>Permissions and roles.</strong> Proactive messaging about permission changes seemed to improve acceptance among admins.</li>
+      </ul>
+
+      <h2>Skills Applied</h2>
+      <p>
+        <strong>Design craft:</strong> Interaction design, journey mapping, error-state and
+        redirect design, onboarding and feature-discovery patterns, communication design.
+      </p>
+      <p>
+        <strong>Strategy &amp; change management:</strong> Migration planning, impact
+        prioritization, phased cohort rollout, feedback loops.
+      </p>
+      <p>
+        <strong>Cross-functional:</strong> Partnering with Product, Engineering, Customer Success,
+        Marketing, and platform teams across the Workleap suite.
+      </p>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; 2026 Jackie Risk</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
