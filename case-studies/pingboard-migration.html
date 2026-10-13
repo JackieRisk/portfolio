@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jackie Risk | Migrating Pingboard into Workleap</title>
-  <meta name="description" content="How I designed the customer experience for migrating existing Pingboard customers onto the unified Workleap platform: redirects, re-authentication, feature guidance, and communication across phased cohorts.">
+  <meta name="description" content="How I designed the experience around a platform migration: onboarding Pingboard customers onto the Workleap platform, building the features that unblocked them, and rebuilding the org chart afterward.">
   <link rel="stylesheet" href="../assets/css/style.css">
 
   <script type="application/ld+json">
@@ -13,8 +13,8 @@
     "@type": "CreativeWork",
     "name": "Migrating Pingboard into the Workleap Platform",
     "author": { "@type": "Person", "name": "Jackie Risk" },
-    "about": "Customer-facing UX for migrating existing Pingboard customers onto the unified Workleap platform, including login redirects, integration re-authentication, relocated-feature guidance, and a phased communication plan.",
-    "keywords": "UX design, migration UX, change management, customer journey mapping, onboarding, feature discovery, B2B SaaS, platform consolidation, cross-functional collaboration, communication design"
+    "about": "Product design around the migration of Pingboard customers onto the unified Workleap platform: pre-migration UX and onboarding, platform features that unblocked migration, and the post-migration org chart rebuild.",
+    "keywords": "UX design, migration UX, change management, platform consolidation, customer journey mapping, onboarding, org chart, data visualization, B2B SaaS, product strategy, cross-functional collaboration, communication design"
   }
   </script>
 </head>
@@ -38,32 +38,32 @@
     <div class="case-header wrap">
       <span class="eyebrow">Migration UX · Change Management · B2B SaaS</span>
       <h1>Migrating Pingboard into the Workleap Platform</h1>
-      <p class="tagline">Designing clarity and reassurance for customers moving onto the unified Workleap platform, one cohort at a time.</p>
+      <p class="tagline">Designing around a platform migration: onboarding customers in, building the features that unblocked them, and rebuilding what came after.</p>
 
       <div class="case-meta">
         <div>
           <strong>Role</strong>
-          Senior Product Designer
+          Senior Product Designer, Pingboard
         </div>
         <div>
           <strong>Timeline</strong>
-          Design began January 2025 for migrations starting April 2025, rolled out in phased customer cohorts
+          Design from August 2024 through 2026, around migrations that ran April 2025 to February 2026
         </div>
         <div>
           <strong>Team</strong>
-          Product, Engineering, Product Marketing, Customer Success, and Platform teams, including Officevibe
+          Product, Engineering, Customer Success, Marketing, and platform teams, including Officevibe
         </div>
         <div>
           <strong>Scope</strong>
-          Customer journey, login and navigation redirects, integration re-authentication, relocated-feature guidance, communication and onboarding plans
+          Migration UX and onboarding, platform parity features, org chart and profile fields, post-migration rebuild
         </div>
         <div>
           <strong>Output</strong>
-          Journey map, migration flows, redirect and error-handling experiences, onboarding and feature-discovery patterns
+          Journey map, migration flows and tours, feature designs, prototypes used as the engineering scope of record
         </div>
         <div>
           <strong>Tools</strong>
-          Figma, Intercom
+          Figma, Intercom, LogRocket, Metabase
         </div>
       </div>
 
@@ -76,19 +76,18 @@
 
       <h2>TL;DR</h2>
       <p>
-        I designed the customer-facing experience for migrating existing Pingboard customers onto
-        the unified Workleap platform, so they could keep their data and workflows intact while
-        relocated features, new login URLs, and changed permissions took effect. I mapped the
-        customer journey, ranked every change by whether customers had to act on it and how soon,
-        designed the redirect and re-authentication experiences, and worked with Marketing and
-        Customer Success on communications at 90, 30, and 7 days before migration and on
-        migration day. The migration is now complete.
+        Pingboard, an org chart and directory product, joined Workleap through an acquisition in
+        December 2023, and its customers were then moved onto the unified Workleap platform. As
+        Pingboard's designer, I shaped that move in three places: the pre-migration UX and
+        onboarding that kept customers informed and oriented, the platform features that
+        unblocked customers who depended on Pingboard capabilities, and the post-migration
+        rebuild of the org chart. Migrations ran from April 2025 and finished in February 2026.
       </p>
 
       <h2>The Challenge</h2>
       <p>
-        Pingboard customers were moving onto the unified Workleap platform to enable cross-product
-        synergy and improve customer value. For the customer, that meant a lot of change at once.
+        Moving existing customers onto a different platform meant a lot of change at once, for
+        people who had already been through significant change since the acquisition.
       </p>
 
       <h3>Challenges &amp; risks</h3>
@@ -96,6 +95,7 @@
         <li>Users had to reconnect integrations (HRIS, notifications, SSO).</li>
         <li>Features were relocated across Workleap products (for example, Applause to Good Vibes, and Surveys and 1-on-1s to Officevibe).</li>
         <li>The UX changed significantly: login URLs, user permissions, and deprecated features.</li>
+        <li>Some features customers relied on most lived on other teams' roadmaps, so the platform did not yet have parity.</li>
         <li>Confusion and frustration were real risks, given how much change customers had to manage.</li>
       </ul>
 
@@ -112,31 +112,43 @@
       <p class="image-caption">Overview: a new "What's changed" nav item launches the welcome modal, and badges flag what moved. Emails keep customers informed at each step.</p>
 
       <h2>My Role &amp; Scope</h2>
-      <p>As Senior Product Designer, I owned the UX and interaction design and the user guidance and communication design for the migration, working across Product, Engineering, Customer Success, Marketing, and the platform and Officevibe teams:</p>
+      <p>
+        The migration program itself was run by product, engineering, customer success, and
+        marketing. As Pingboard's designer, my work sat around it in three places:
+      </p>
       <ul>
-        <li>Mapped the customer journey to understand where migration would create friction.</li>
-        <li>Prioritized clear UX, onboarding, and feature-discovery patterns.</li>
-        <li>Designed redirection and error-handling experiences, such as login redirects and integration re-authentication prompts.</li>
-        <li>Partnered with the platform and Officevibe teams to streamline the integration of cross-platform features.</li>
-        <li>Worked with Marketing and Customer Success on communication and onboarding plans at key milestones.</li>
-        <li>Planned feedback loops (Customer Success feedback and support tickets) to inform UX improvements.</li>
+        <li><strong>Before:</strong> the pre-migration UX and onboarding that prepared customers for the move.</li>
+        <li><strong>During:</strong> the platform features that unblocked migration, including the free org chart, bulk manager assignment, non-seat members, customizable profiles, property settings, and field mapping.</li>
+        <li><strong>After:</strong> the post-migration rebuild, including engagement in the org chart, the sync report, and the Workleap Next org chart and People fields.</li>
       </ul>
+      <p>
+        Across all three, I mapped the customer journey, designed the redirect and error-handling
+        experiences, worked with Marketing and Customer Success on communication and onboarding
+        plans, and partnered with the platform and Officevibe teams on cross-product features.
+      </p>
 
       <h2>Approach</h2>
-
-      <h3>1. Map the customer journey</h3>
       <p>
-        I started by mapping the journey of an existing Pingboard admin being migrated, to see
-        where friction would show up. The map separated what the customer had to do (reconnect
-        integrations, confirm billing) from the "Where's my..." questions about features that had
-        moved.
+        Formal research was thin on this project: there were no interview syntheses or usability
+        studies. I leaned on behavioral data (LogRocket session replays and Metabase usage data),
+        a survey, input from Customer Success, customer conversations, and a Pingboard HR
+        persona built around the jobs customers hire the product to do.
+      </p>
+
+      <h3 class="phase">Before: inform and orient</h3>
+
+      <h4>1. Map the customer journey</h4>
+      <p>
+        I mapped the journey of an existing Pingboard admin being migrated, to see where friction
+        would show up. The map separated what the customer had to do (reconnect integrations,
+        confirm billing) from the "Where's my..." questions about features that had moved.
       </p>
       <a href="../assets/images/pingboard-migration/customer-journey-map.png" target="_blank" rel="noopener" class="img-link">
         <img src="../assets/images/pingboard-migration/customer-journey-map.png" alt="Customer journey map for a migrating Pingboard admin, with prioritized steps starting with integrations and billing, and a list of Where's my questions about moved features">
       </a>
       <p class="image-caption">Customer journey map for a migrating admin, with prioritized steps and open questions.</p>
 
-      <h3>2. Rank every change by what customers had to do</h3>
+      <h4>2. Rank every change by what customers had to do</h4>
       <p>
         Not every change deserved the same attention. I mapped each change against each plan tier
         (Basic, Essential, and Pro) and rated it by whether the customer had to act and how soon:
@@ -148,69 +160,140 @@
       </a>
       <p class="image-caption">Impacts to each plan, rated by urgency and whether the customer had to act.</p>
 
-      <h3>3. Design for clarity and reassurance</h3>
+      <h4>3. Inform before login, and keep the product quiet</h4>
       <p>
-        The goal was for nothing to feel like it had disappeared or broken. That meant:
+        I wanted admins to learn about their new product access before they logged into their
+        migrated account. With the email doing that work, the product did not have to be so
+        verbose. A long message sprung on users right after login would have been a lot.
       </p>
       <ul>
-        <li><strong>Seamless login and navigation.</strong> Redirects from the old URLs to the new pingboard.workleap.com address to avoid confusion, with clear messaging around SSO reactivation and password resets.</li>
-        <li><strong>Feature guidance and education.</strong> Prompts and onboarding that explain relocated features, plus a "What's changed" nav item and badges that flag what moved.</li>
-        <li><strong>Data migration transparency.</strong> Clear status and integrity messaging for migrated data such as teams, profiles, and groups.</li>
-        <li><strong>Deprecated features.</strong> UX patterns for handling deprecated features and guiding people to new alternatives.</li>
-        <li><strong>Consistency.</strong> Visual and interaction consistency, using Workleap's UI framework.</li>
+        <li><strong>Contextual tours, not one generic tour.</strong> A Good Vibes tour launched from the Applause tile, and a survey tour from the Surveys page. I set up three migration tours in Intercom and kept Intercom use to a minimum.</li>
+        <li><strong>A migration interstitial</strong> that blocks access mid-migration, adapted from another Workleap product.</li>
+        <li><strong>Contextual callouts</strong> in place of a heavy onboarding flow.</li>
+        <li><strong>Legacy features kept through the move,</strong> since the Pingboard and Officevibe features were not exactly 1:1 and a straight swap would have been jarring.</li>
+        <li><strong>Seamless login and navigation.</strong> Redirects from the old URLs to the new pingboard.workleap.com address, with clear messaging around SSO reactivation and password resets.</li>
       </ul>
       <a href="../assets/images/pingboard-migration/migration-flow-map.png" target="_blank" rel="noopener" class="img-link">
         <img src="../assets/images/pingboard-migration/migration-flow-map.png" alt="End-to-end migration flow map from pre-migration emails through the login redirect, welcome modal, and relocated-feature guidance screens">
       </a>
       <p class="image-caption">End-to-end migration flow, from the first email through relocated-feature guidance.</p>
 
-      <h3>4. Communicate at every milestone</h3>
+      <h4>4. Communicate at every milestone</h4>
       <p>
         Transparency and communication were key. I worked with Marketing and Customer Success on
         communication and onboarding plans timed to 90, 30, and 7 days before migration, and on
-        migration day, so customers were informed at every step.
+        migration day.
       </p>
 
-      <h3>5. Roll out in cohorts and learn as we go</h3>
+      <h3 class="phase">During: build what unblocked customers</h3>
       <p>
-        Migrating in phased customer cohorts let us improve as we went. The bulk of cohorts were
-        scheduled for April 1, 2025, and excluded companies with tricky situations that would
-        have made for a poor experience. We planned feedback loops, drawing on Customer Success
-        feedback and support tickets, to inform UX improvements between cohorts.
+        Cohorts were sequenced by blocker: each group of customers became migratable once one more
+        platform gap shipped. That made the platform features below a direct line to customers
+        who could move.
+      </p>
+
+      <h4>5. Free org chart: protect the value, and the framing</h4>
+      <ul>
+        <li><strong>"Free," not "Lite."</strong> "Lite" insinuates a lesser version of Pingboard, which it was not.</li>
+        <li><strong>Upsell callouts for admins only,</strong> the people with buying power, with filters held back for the paid tier.</li>
+        <li><strong>Bulk direct-manager assignment.</strong> A free org chart without managers is a poor experience, so we made a best guess from Officevibe team leads. It became the gate for the second free org chart cohort.</li>
+        <li><strong>Scope.</strong> I argued to leave the Teams Matrix out of the first version, since doing so made the transition easier and created an upsell opportunity.</li>
+      </ul>
+
+      <h4>6. Non-seat members: keep the job to be done intact</h4>
+      <p>
+        Many customers had people in their org chart who did not need a license. I designed
+        non-seat members to be managed almost identically to licensed users, with a license
+        switch. Adding people stayed available from the org chart and directory, because adding
+        users is part of the job customers are doing: representing their organization. Non-seat
+        members are visible only in Pingboard and settings, notifications go to the next licensed
+        manager up the chain, and they cannot belong to a team.
+      </p>
+
+      <h4>7. Profiles and fields: curate, don't dump</h4>
+      <ul>
+        <li><strong>Customize profiles.</strong> A curated subset of properties plus a side panel, rather than automatically showing every public property, which would have been cumbersome.</li>
+        <li><strong>Field mapping.</strong> I flagged that HRIS field names and the integration layer's field names do not always match, such as one system's "Manager" versus another's "Leader."</li>
+        <li><strong>Property settings.</strong> Visibility, editability, and required, in one place.</li>
+        <li><strong>Forms.</strong> Never disable Save. Validate on click and highlight every invalid field.</li>
+      </ul>
+
+      <h4>8. Let evidence kill an idea early</h4>
+      <p>
+        I surveyed managers and Customer Ops in March 2025 on whether to show performance data in
+        the org chart. The results were not encouraging, so we deprioritized it. It was better
+        to learn that early than after investing design and engineering time.
+      </p>
+
+      <h3 class="phase">After: rebuild the org chart</h3>
+
+      <h4>9. Make data freshness visible</h4>
+      <p>
+        When engagement scores came to the org chart, I designed a "Last updated" indicator to
+        handle sync lag, so the chart never implied the data was more current than it was. It
+        shipped in March 2026.
+      </p>
+
+      <h4>10. Redesign the sync report around risk</h4>
+      <p>
+        A customer accidentally deleted teams during a sync, so I redesigned the sync report in
+        July 2026. It now groups changes as Removed, Added, Changed, and Issues, and warns
+        clearly before permanent team deletions.
+      </p>
+
+      <h4>11. Design for scale</h4>
+      <p>
+        Large org charts needed zoom-adaptive detail and progressive disclosure: at high zoom
+        levels the chart shows only departments, and as you zoom in it reveals more.
+      </p>
+
+      <h4>12. Prototype the next org chart</h4>
+      <p>
+        For the Workleap Next org chart viewer and People fields, my prototype served as the
+        scope of record for engineering. At the developers' request, People fields were mapped
+        to the legacy visibility options (Everyone, Restricted, Limited, and Hidden).
       </p>
 
       <h2>Results &amp; Impact</h2>
       <ul>
-        <li>The migration is complete: existing Pingboard customers moved onto the unified Workleap platform in phased cohorts.</li>
-        <li>Customers were guided through prioritized steps (integrations and billing first) rather than left to find their own way.</li>
-        <li>Designed the redirect, re-authentication, and "Where's my..." experiences that every cohort moved through.</li>
+        <li>Migrations ran from April 2025 and finished in February 2026.</li>
+        <li>The platform features I designed, including non-seat members, property types and settings, and field mapping, shipped and unblocked cohorts of customers who could not otherwise move.</li>
+        <li>The free org chart launched to existing Workleap customers in March 2025, and the second cohort was gated on bulk manager assignment.</li>
+        <li>Engagement in the org chart (March 2026), the redesigned sync report (July 2026), and the Workleap Next org chart viewer (September 2026) shipped after migration.</li>
       </ul>
 
       <h2>Reflection</h2>
       <p>
-        Early feedback from the first two cohorts pointed to five things that mattered most.
-        These were early, anecdotal signals rather than measured results:
+        This was a hard migration, and customers felt the change. The feedback we got shaped what
+        I would do differently, and what I design for now:
       </p>
       <ul>
-        <li><strong>Proactive guidance and clarity.</strong> Users showed less friction when clearly guided through prioritized onboarding steps, such as integrations and billing.</li>
-        <li><strong>Anticipating change-management challenges.</strong> Addressing likely points of confusion up front, like relocated features and permission mappings, appeared to reduce anxiety.</li>
-        <li><strong>Personalized onboarding.</strong> Initial reactions suggested tailored onboarding helped manage expectations.</li>
-        <li><strong>Feature discoverability.</strong> Mapping out the "Where's my..." flows likely reduced confusion about moved or changed features.</li>
-        <li><strong>Permissions and roles.</strong> Proactive messaging about permission changes seemed to improve acceptance among admins.</li>
+        <li><strong>Communication is product work.</strong> How a change is explained matters as much as how it is built. A rumor, or a lapsed migration trial, can read as a product bug.</li>
+        <li><strong>Usage data justifies cuts, but small groups still feel them.</strong> Features used by a few customers still mattered to those customers, and we should have warned them earlier.</li>
+        <li><strong>Rushed integration calls leave lasting debt.</strong> Decisions made quickly at integration time, like default visibility settings, were still being reconciled long after.</li>
+        <li><strong>Teach new customers habits that last.</strong> If new customers adopt features that are about to move or disappear, they build habits around them. Scoping what they see up front avoids repeating the same migration.</li>
+        <li><strong>Evidence beats opinion early.</strong> A short survey saved us from investing in an idea that would not have landed.</li>
       </ul>
 
       <h2>Skills Applied</h2>
       <p>
         <strong>Design craft:</strong> Interaction design, journey mapping, error-state and
-        redirect design, onboarding and feature-discovery patterns, communication design.
+        redirect design, onboarding and feature-discovery patterns, org chart and data
+        visualization design, form design, communication design.
+      </p>
+      <p>
+        <strong>Research &amp; evidence:</strong> Surveys, behavioral analytics (session
+        replays and usage data), personas and jobs to be done, customer and Customer Success
+        feedback.
       </p>
       <p>
         <strong>Strategy &amp; change management:</strong> Migration planning, impact
-        prioritization, phased cohort rollout, feedback loops.
+        prioritization, scoping, phased cohort rollout, feature parity, product and pricing
+        framing.
       </p>
       <p>
-        <strong>Cross-functional:</strong> Partnering with Product, Engineering, Customer Success,
-        Marketing, and platform teams across the Workleap suite.
+        <strong>Cross-functional:</strong> Partnering with Product, Engineering, Customer
+        Success, Marketing, and platform teams across the Workleap suite.
       </p>
 
     </div>

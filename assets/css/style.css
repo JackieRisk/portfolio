@@ -293,6 +293,15 @@ textarea:focus-visible {
   display: block;
 }
 
+.thumb-top-left {
+  background: #e6ded7;
+}
+
+.thumb-top-left img {
+  object-fit: contain;
+  object-position: top left;
+}
+
 .case-card-text {
   padding: 28px;
   flex: 1;
@@ -474,8 +483,30 @@ textarea:focus-visible {
   margin-bottom: 10px;
 }
 
+.case-body h3.phase {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  margin-top: 48px;
+  margin-bottom: 12px;
+}
+
+.case-body h4 {
+  font-family: var(--font-body);
+  font-size: 1.02rem;
+  font-weight: 700;
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+
 .case-body ul {
   padding-left: 1.2em;
+}
+
+.case-body p a,
+.case-body li a {
+  color: var(--color-accent);
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 .case-body li {
