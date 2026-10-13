@@ -4,3 +4,6 @@
 # Unused reference files not linked from the site (keeps the repo lean)
 assets/images/*.deck
 assets/images/pingboard.png
+
+# Large source files used to export slices (kept local, not published)
+assets/images/pingboard-migration/*.svg

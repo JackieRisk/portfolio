@@ -266,7 +266,9 @@ textarea:focus-visible {
 
 .case-card {
   display: flex;
-  align-items: stretch;
+  align-items: center;
+  gap: 24px;
+  padding: 16px;
   text-decoration: none;
   color: inherit;
   border: 1px solid var(--color-border);
@@ -281,8 +283,12 @@ textarea:focus-visible {
   transform: translateY(-2px);
 }
 
+/* Thumbnails are locked to 4:3 so every card matches. Export them at 1200x900. */
 .case-card-thumb {
-  flex: 0 0 240px;
+  flex: 0 0 260px;
+  aspect-ratio: 4 / 3;
+  border-radius: 6px;
+  overflow: hidden;
   background: var(--color-border);
 }
 
@@ -293,17 +299,8 @@ textarea:focus-visible {
   display: block;
 }
 
-.thumb-top-left {
-  background: #e6ded7;
-}
-
-.thumb-top-left img {
-  object-fit: contain;
-  object-position: top left;
-}
-
 .case-card-text {
-  padding: 28px;
+  padding: 8px 12px 8px 0;
   flex: 1;
 }
 
@@ -762,10 +759,16 @@ blockquote {
   }
   .case-card {
     flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    padding: 12px;
   }
   .case-card-thumb {
-    flex: 0 0 160px;
+    flex: none;
     width: 100%;
+  }
+  .case-card-text {
+    padding: 0 8px 8px;
   }
   .about {
     gap: 24px;

@@ -219,6 +219,10 @@
         <li><strong>Bulk direct-manager assignment.</strong> A free org chart without managers is a poor experience, so we made a best guess from Officevibe team leads. It became the gate for the second free org chart cohort.</li>
         <li><strong>Scope.</strong> I argued to leave the Teams Matrix out of the first version, since doing so made the transition easier and created an upsell opportunity.</li>
       </ul>
+      <a href="../assets/images/pingboard-migration/free-org-chart-upsell-side-sheet.png" target="_blank" rel="noopener" class="img-link">
+        <img src="../assets/images/pingboard-migration/free-org-chart-upsell-side-sheet.png" alt="Free org chart showing a role side sheet with an upsell callout about custom fields">
+      </a>
+      <p class="image-caption">Free org chart: one upsell option I explored, a callout in the role side sheet.</p>
 
       <h4>6. Non-seat members: keep the job to be done intact</h4>
       <p>
@@ -230,6 +234,49 @@
         manager up the chain, and they cannot belong to a team. This unblocked about 1,000
         organizations and roughly 120,000 people.
       </p>
+
+      <p>
+        <strong>Naming.</strong> The label mattered as much as the mechanics. I weighed three
+        terms:
+      </p>
+      <ul>
+        <li><strong>Placeholder user:</strong> vague, and can be misconstrued as pending or temporary.</li>
+        <li><strong>Unlicensed user:</strong> clearer, but insinuates they need to be licensed.</li>
+        <li><strong>Non-seat user:</strong> clearer, and communicates that they do not use a seat or license.</li>
+      </ul>
+      <p>I went with non-seat users.</p>
+
+      <p>
+        <strong>Adding.</strong> Non-seat users get their own option in the Add users modal. Email
+        and phone become optional, and licensed-user options like team and access are hidden. The
+        option is only visible in Pingboard accounts, and only to people with adequate
+        permissions.
+      </p>
+      <a href="../assets/images/pingboard-migration/non-seat-add-flow.png" target="_blank" rel="noopener" class="img-link">
+        <img src="../assets/images/pingboard-migration/non-seat-add-flow.png" alt="The Add users modal with a new Add non-seat users option, leading to a simplified form where email is optional">
+      </a>
+      <p class="image-caption">Adding non-seat users: a new option in the Add users modal, with a simplified form.</p>
+
+      <p>
+        <strong>Managing.</strong> In Settings, non-seat members sit in the same Users table as
+        licensed users, with a Non-seat status and no product access. The row menu offers Grant
+        access, Assign role, Deactivate, and Delete.
+      </p>
+      <a href="../assets/images/pingboard-migration/non-seat-users-list.png" target="_blank" rel="noopener" class="img-link">
+        <img src="../assets/images/pingboard-migration/non-seat-users-list.png" alt="Settings Users table showing a non-seat user with a Non-seat status and no product access, and a row menu with Grant access, Assign role, Deactivate, and Delete">
+      </a>
+      <p class="image-caption">Settings, Users: non-seat members alongside licensed users, with the row actions open.</p>
+
+      <p>
+        <strong>Scoping and deleting.</strong> Non-seat users should be ignored in every product
+        other than Pingboard, and are only used in the org chart and directory. Delete is the only
+        removal option for created and non-seat users, and because it is low stakes, I proposed
+        dropping the confirmation modal and letting these users be deleted freely.
+      </p>
+      <a href="../assets/images/pingboard-migration/non-seat-delete-handling.png" target="_blank" rel="noopener" class="img-link">
+        <img src="../assets/images/pingboard-migration/non-seat-delete-handling.png" alt="Design notes on scoping non-seat users to Pingboard and on the delete confirmation modal, with a proposal to remove the confirmation because it is low stakes">
+      </a>
+      <p class="image-caption">Design notes on scope and delete handling.</p>
 
       <h4>7. Profiles and fields: curate, don't dump</h4>
       <ul>
