@@ -6,10 +6,18 @@
   <title>Jackie Risk | Senior Product Designer</title>
   <meta name="description" content="Jackie Risk is a Senior Product Designer with 10 years of experience leading end-to-end UX across SaaS, enterprise, and federal platforms.">
 
+  <meta name="author" content="Jackie Risk">
+  <link rel="canonical" href="https://jackierisk.github.io/portfolio/">
+
   <!-- Open Graph tags: control how this page looks when shared on LinkedIn, Slack, etc. -->
-  <meta property="og:title" content="Jackie Risk | Senior Product Designer">
-  <meta property="og:description" content="10 years of experience leading end-to-end UX across SaaS, enterprise, and federal platforms.">
+  <meta property="og:site_name" content="Jackie Risk">
   <meta property="og:type" content="website">
+  <meta property="og:title" content="Jackie Risk | Senior Product Designer">
+  <meta property="og:description" content="Jackie Risk is a Senior Product Designer with 10 years of experience leading end-to-end UX across SaaS, enterprise, and federal platforms.">
+  <meta property="og:url" content="https://jackierisk.github.io/portfolio/">
+  <meta property="og:image" content="https://jackierisk.github.io/portfolio/assets/images/og-home.png">
+  <meta property="og:image:alt" content="Jackie Risk, Senior Product Designer, enterprise, SaaS and federal UX">
+  <meta name="twitter:card" content="summary_large_image">
 
   <link rel="stylesheet" href="assets/css/style.css">
 
@@ -17,20 +25,40 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Jackie Risk",
-    "jobTitle": "Senior Product Designer",
-    "url": "https://jackierisk.com",
-    "sameAs": [
-      "https://www.linkedin.com/in/jacqueline-risk/",
-      "https://www.behance.net/jrisk"
-    ],
-    "knowsAbout": [
-      "UX Design", "Product Design", "Interaction Design", "Information Architecture",
-      "Design Systems", "Usability Testing", "Accessibility (WCAG / Section 508)",
-      "SaaS Product Design", "B2B Design"
-    ],
-    "description": "Senior Product Designer with 10 years of experience leading end-to-end UX across SaaS, enterprise, and federal platforms."
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://jackierisk.github.io/portfolio/#person",
+        "name": "Jackie Risk",
+        "jobTitle": "Senior Product Designer",
+        "url": "https://jackierisk.github.io/portfolio/",
+        "image": "https://jackierisk.github.io/portfolio/assets/images/profile-square.jpg",
+        "description": "Senior Product Designer with 10 years of experience leading end-to-end UX across SaaS, enterprise, and federal platforms.",
+        "worksFor": { "@type": "Organization", "name": "Workleap", "url": "https://workleap.com" },
+        "alumniOf": [
+          { "@type": "Organization", "name": "EAGLE6" },
+          { "@type": "EducationalOrganization", "name": "Columbus College of Art & Design" }
+        ],
+        "address": { "@type": "PostalAddress", "addressRegion": "IN", "addressCountry": "US" },
+        "sameAs": [
+          "https://www.linkedin.com/in/jacqueline-risk/",
+          "https://www.behance.net/jrisk"
+        ],
+        "knowsAbout": [
+          "UX Design", "Product Design", "Interaction Design", "Information Architecture",
+          "Design Systems", "Data Visualization", "Dashboard Design", "Usability Testing",
+          "Accessibility (WCAG / Section 508)", "SaaS Product Design", "B2B Design",
+          "Enterprise UX", "Migration UX", "Product-Led Growth", "Design Leadership"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://jackierisk.github.io/portfolio/#website",
+        "name": "Jackie Risk",
+        "url": "https://jackierisk.github.io/portfolio/",
+        "author": { "@id": "https://jackierisk.github.io/portfolio/#person" }
+      }
+    ]
   }
   </script>
 </head>
@@ -110,8 +138,9 @@
   </main>
 
   <footer class="site-footer">
-    <div class="wrap">
+    <div class="wrap footer-inner">
       <p>&copy; 2026 Jackie Risk</p>
+      <a href="https://www.linkedin.com/in/jacqueline-risk/" target="_blank" rel="noopener">LinkedIn ↗</a>
     </div>
   </footer>
 

@@ -397,6 +397,27 @@ textarea:focus-visible {
   font-size: 0.9rem;
 }
 
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.site-footer a {
+  color: var(--color-accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
 /* ---------- Case study pages ---------- */
 .case-header {
   padding: 56px 24px 32px;

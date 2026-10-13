@@ -1,15 +1,20 @@
 # Jackie Risk
 
-> Senior Product Designer with 10 years of experience leading end-to-end UX across SaaS, enterprise, and federal platforms. Currently at Workleap, focused on information architecture, navigation, design systems, and AI-augmented prototyping.
+> Senior Product Designer with 10 years of experience leading end-to-end UX across SaaS, enterprise, and federal platforms. Currently at Workleap; previously Principal Product Designer at EAGLE6 (2016 to 2022), where she led designers and built Section 508-compliant design systems for a federal cybersecurity platform. Based in Indiana, USA, and works best in async, remote-first teams.
 
 ## Pages
 
-- [About](about.html): Background, experience at Workleap and EAGLE6, and working style.
-- [Home and selected work](index.html): Introduction and the list of case studies.
-- [Officevibe Top Manager Awards](case-studies/officevibe-awards.html): A product-led growth experiment: a shareable recognition feature that drove a 69% engagement rate and roughly 150,000 organic LinkedIn impressions.
-- [Migrating Pingboard into Workleap](case-studies/pingboard-migration.html): Customer-facing migration UX for moving existing Pingboard customers onto the unified Workleap platform, including redirects, integration re-authentication, relocated-feature guidance, and a phased communication plan. The migration is complete.
-- [EAGLE6 Status Dashboard](case-studies/eagle6-status-dashboard.html): Dashboards designed as Principal Product Designer for U.S. Department of Veterans Affairs stakeholders and analysts, to help them understand the impact of infrastructure changes during the migration from the legacy MUMPS system to the Cerner electronic health record platform. Imagery is mockup only because of PHI risk.
-- [Contact](contact.html): Get in touch via the contact form.
+- [Home and selected work](https://jackierisk.github.io/portfolio/): Introduction and the list of case studies.
+- [About](https://jackierisk.github.io/portfolio/about.html): Background, experience at Workleap and EAGLE6, and working style.
+- [Officevibe Top Manager Awards](https://jackierisk.github.io/portfolio/case-studies/officevibe-awards.html): A product-led growth experiment: a shareable recognition feature that drove a 69% engagement rate and roughly 150,000 organic LinkedIn impressions.
+- [Migrating Pingboard into Workleap](https://jackierisk.github.io/portfolio/case-studies/pingboard-migration.html): Customer-facing migration UX for moving existing Pingboard customers onto the unified Workleap platform, including redirects, integration re-authentication, relocated-feature guidance, a phased communication plan, and the platform features that unblocked migration.
+- [EAGLE6 Status Dashboard](https://jackierisk.github.io/portfolio/case-studies/eagle6-status-dashboard.html): Dashboards designed as Principal Product Designer, leading two designers, for U.S. Department of Veterans Affairs migration teams, to help them understand the impact of infrastructure changes during the migration from the legacy MUMPS system to the Cerner electronic health record platform. Imagery is mockup only because of PHI risk.
+- [Contact](https://jackierisk.github.io/portfolio/contact.html): Get in touch via the contact form.
+
+## Elsewhere
+
+- [LinkedIn](https://www.linkedin.com/in/jacqueline-risk/): Full work history.
+- [Behance](https://www.behance.net/jrisk): Older case studies.
 
 ## Notes
 
