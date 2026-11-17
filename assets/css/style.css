@@ -360,6 +360,7 @@ textarea:focus-visible {
 .closing h2 {
   margin: 0 0 10px;
   font-size: 1.9rem;
+  font-weight: 900;
 }
 
 .closing p {
